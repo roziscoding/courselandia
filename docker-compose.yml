@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  vhost:
+    image: jwilder/nginx-proxy:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  mongodb:
+    image: mvertes/alpine-mongo
+    ports:
+      - "27017:27017"
+
+  backend:
+    build: ./backend
+    depends_on:
+      - mongodb
+    environment:
+      NODE_ENV: development
+      DEBUG: expresso:*,courselandia:*
+      MONGODB_URI: mongodb://mongodb:27017/courselandia
+      MONGODB_DBNAME: courselandia
+      VIRTUAL_HOST: backend.127.0.0.1.nip.io
+    entrypoint: node -r source-map-support/register dist/index.js

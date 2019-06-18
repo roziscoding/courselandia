@@ -1,0 +1,17 @@
+{
+  "course": {
+    "_id": "5cfbadda11bfb51242cc630c",
+    "name": "Lorem ipsum",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla mollis tellus, quis cursus nulla sagittis vitae. Vestibulum non velit scelerisque, hendrerit ipsum id, ullamcorper magna. In rutrum venenatis eleifend. Praesent laoreet molestie porta. Curabitur imperdiet tincidunt ipsum. Donec eget lectus accumsan, facilisis quam in, sodales mi. Nulla facilisi. Duis posuere nulla in turpis consequat, sit amet commodo augue posuere. Curabitur a ipsum nec velit iaculis euismod in id magna. In vel sem id sapien scelerisque sagittis. Etiam in venenatis nisi.",
+    "createdAt": "2019-06-08T12:45:14.348Z",
+    "updatedAt": "2019-06-08T12:45:14.348Z",
+    "deletedAt": null
+  },
+  "noIdCourse": {
+    "name": "Lorem ipsum",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla mollis tellus, quis cursus nulla sagittis vitae. Vestibulum non velit scelerisque, hendrerit ipsum id, ullamcorper magna. In rutrum venenatis eleifend. Praesent laoreet molestie porta. Curabitur imperdiet tincidunt ipsum. Donec eget lectus accumsan, facilisis quam in, sodales mi. Nulla facilisi. Duis posuere nulla in turpis consequat, sit amet commodo augue posuere. Curabitur a ipsum nec velit iaculis euismod in id magna. In vel sem id sapien scelerisque sagittis. Etiam in venenatis nisi.",
+    "createdAt": "2019-06-08T12:45:14.348Z",
+    "updatedAt": "2019-06-08T12:45:14.348Z",
+    "deletedAt": null
+  }
+}
