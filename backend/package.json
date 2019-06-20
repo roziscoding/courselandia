@@ -7,7 +7,7 @@
     "clean": "rm -rf dist",
     "build": "tsc",
     "build:clean": "npm run clean && npm run build",
-    "test": "mocha tests/**/*.ts --no-warnings -r ts-node/register",
+    "test": "mocha test/**/*.ts --no-warnings -r ts-node/register",
     "start": "node dist/index.js",
     "start:debug": "concurrently -n tsc,nodemon -i --default-input-target nodemon \"tsc -w\" \"DEBUG=expresso:*,courselandia:* nodemon -r source-map-support/register dist/index.js\""
   },
@@ -25,6 +25,7 @@
     "mocha": "^6.1.4",
     "mongo-mock": "^3.7.1",
     "nodemon": "^1.19.1",
+    "nyc": "^14.1.1",
     "sinon": "^7.3.2",
     "source-map-support": "^0.5.12",
     "ts-node": "^8.2.0",

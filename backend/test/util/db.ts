@@ -12,14 +12,12 @@ export interface IMongodbParams {
 
 export async function createFakeConnection (params: IMongodbParams, appName: string) {
   log('called createFakeConnection with params %o', params)
-  const connection = await mongodb.MongoClient.connect(params.uri, {
+  return mongodb.MongoClient.connect(params.uri, {
     useNewUrlParser: true,
     appname: appName,
     reconnectTries: 3,
     reconnectInterval: 5000
   })
-
-  return connection
 }
 
 export function prepareDatabase (fn: (connection: any) => any) {
