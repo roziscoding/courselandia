@@ -43,7 +43,7 @@
     "argon2": "^0.23.0",
     "debug": "^4.1.1",
     "express-rescue": "^1.1.22",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongodb": "^3.2.7",
     "reflect-metadata": "^0.1.13",
     "sugar-env": "^1.5.7",
